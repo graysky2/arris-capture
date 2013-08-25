@@ -13,8 +13,8 @@ Use it to monitor powerlevels and SNR values over time to aid in troubleshooting
 Note that I assume you have a running http server properly configured.
 
 ## Example
-![downstream](http://s19.postimg.org/6tcjtkewj/downstream.jpg)
-![upstream](http://s19.postimg.org/sh1i40far/upstream.jpg)
+![downstream](http://s19.postimg.org/ipxbyyr8z/downstream.png)
+![upstream](http://s19.postimg.org/7euoalkdv/upstream.png)
 
 ## Notes
 Note that the crude grep/awk/sed lines work fine on an Arris TM822G running
