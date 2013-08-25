@@ -1,0 +1,83 @@
+<html>
+<head>
+<script type="text/javascript"
+  src="dygraph-combined.js"></script>
+</head>
+
+<body>
+<div id="dp"
+  style="width:900px; height:400px;"></div>
+<script type="text/javascript">
+  g2 = new Dygraph(
+    document.getElementById("dp"),
+    "downstream-power.csv", // path to CSV file
+    {
+      labelsDivStyles: { border: '1px solid black' },
+      title: 'Downstream Power',
+      xlabel: 'Date',
+      ylabel: 'Power (dBmV)'
+		}          // options
+  );
+</script>
+
+<div id="DS"
+  style="width:900px; height:400px;"></div>
+<script type="text/javascript">
+  g3 = new Dygraph(
+    document.getElementById("DS"),
+    "downstream-SNR.csv", // path to CSV file
+    {
+      labelsDivStyles: { border: '1px solid black' },
+      title: 'Downstream SNR',
+      xlabel: 'Date',
+      ylabel: 'SNR (dB)'
+		}          // options
+  );
+</script>
+
+<div id="DF"
+  style="width:900px; height:400px;"></div>
+<script type="text/javascript">
+  g3 = new Dygraph(
+    document.getElementById("DF"),
+    "downstream-freq.csv", // path to CSV file
+    {
+      labelsDivStyles: { border: '1px solid black' },
+      title: 'Downstream Frequencies',
+      xlabel: 'Date',
+      ylabel: 'Frequency (MHz)'
+		}          // options
+  );
+</script>
+
+<div id="UP"
+  style="width:900px; height:400px;"></div>
+<script type="text/javascript">
+  g4 = new Dygraph(
+    document.getElementById("UP"),
+    "upstream-power.csv", // path to CSV file
+    {
+      labelsDivStyles: { border: '1px solid black' },
+      title: 'Upstream Power',
+      xlabel: 'Date',
+      ylabel: 'Power (dBmV)'
+		}          // options
+  );
+</script>
+
+<div id="UF"
+  style="width:900px; height:400px;"></div>
+<script type="text/javascript">
+  g4 = new Dygraph(
+    document.getElementById("UF"),
+    "upstream-freq.csv", // path to CSV file
+    {
+      labelsDivStyles: { border: '1px solid black' },
+      title: 'Upstream Frequency',
+      xlabel: 'Date',
+			ylabel: 'Frequency (MHz)'
+		}          // options
+  );
+</script>
+</body>
+</html>
