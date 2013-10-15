@@ -128,6 +128,7 @@ UP3=$(grep "$UF3" $TEMP | awk -F'<td>' '{ print $19 }' | sed 's| dBmV.*||')
 [[ "$DP6" = "----</td>" ]] && DP6=0
 [[ "$DP7" = "----</td>" ]] && DP7=0
 [[ "$DP8" = "----</td>" ]] && DP8=0
+
 [[ "$DS1" = "----</td>" ]] && DS1=0
 [[ "$DS2" = "----</td>" ]] && DS2=0
 [[ "$DS3" = "----</td>" ]] && DS3=0
@@ -136,12 +137,20 @@ UP3=$(grep "$UF3" $TEMP | awk -F'<td>' '{ print $19 }' | sed 's| dBmV.*||')
 [[ "$DS6" = "----</td>" ]] && DS6=0
 [[ "$DS7" = "----</td>" ]] && DS7=0
 [[ "$DS8" = "----</td>" ]] && DS8=0
+
 [[ "$UF1" = "----</td>" ]] && UF1=0
 [[ "$UF2" = "----</td>" ]] && UF2=0
 [[ "$UF3" = "----</td>" ]] && UF3=0
+[[ -z "$UF1" ]] && UF1=0
+[[ -z "$UF2" ]] && UF2=0
+[[ -z "$UF3" ]] && UF3=0
+
 [[ "$UP1" = "----</td>" ]] && UP1=0
 [[ "$UP2" = "----</td>" ]] && UP2=0
 [[ "$UP3" = "----</td>" ]] && UP3=0
+[[ -z "$UP1" ]] && UP1=0
+[[ -z "$UP2" ]] && UP2=0
+[[ -z "$UP3" ]] && UP3=0
 
 # The individual log files
 DLOGFREQ="$LOGPATH/downstream-freq.csv"
