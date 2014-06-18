@@ -18,5 +18,5 @@ Note that I assume you have a running http server properly configured.
 
 ## Notes
 Note that the crude grep/awk/sed lines work fine on an Arris TM822G running
-* Firmware            : TS070659C_050313_MODEL_7_8_SIP_PC20
-* Firmware build time : Fri May 3 11:18:59 EDT 2013
+* Firmware            : TS070659M_092613_MODEL_7_8_SIP_PC20
+* Firmware build time : Thu Sep 26 17:01:21 EDT 2013
