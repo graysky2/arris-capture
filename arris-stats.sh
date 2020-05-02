@@ -59,7 +59,7 @@ RUNDATE=$(date "+%F %T")
 [[ -f "$TEMP" ]] && rm -f "$TEMP"
 
 # try to get stats 6 times waiting 10 sec per time
-wget -q -T 10 -t 6 http://192.168.100.1/cgi-bin/status_cgi -O $TEMP || fail
+wget -q --no-check-certificate -T 10 -t 6 http://192.168.100.1/cgi-bin/status_cgi -O $TEMP || fail
 
 if [[ -n "$KEEPTHEM" ]]; then
 	SAVE="$LOGPATH/snapshots"
